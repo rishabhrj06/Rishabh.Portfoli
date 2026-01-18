@@ -1,10 +1,11 @@
 import React from 'react'
 import Button from '@/Components/Button'
 import { ArrowRight, Download, Linkedin, Github } from 'lucide-react'
+import Skills from '@/Section/Skills'
 
 const Hero = () => {
   return (
-    <section className='relative flex min-h-screen items-center justify-center overflow-hidden'>
+    <section className='relative flex flex-col min-h-screen items-center justify-center overflow-hidden '>
      <div className='absolute inset-0'>
         <img src="/bg.jpg" alt="Image File"  className='w-full h-full object-cover opacity-40'/>
      </div>
@@ -29,11 +30,23 @@ const Hero = () => {
      <div className='container mx-auto px-6 py-32 pb-20 relative z-10'>
       <div className='grid lg:grid-cols-2 gap-12 items-center'>
         <div className='space-y-8'>
-          <div className='animate-fade-in'>
+          <div className='flex gap-4 animate-fade-in'>
             <span className='inline-flex items-center gap-2 rounded-full px-4 py-2 glass text-sm text-primary'>
               <span className='w-2 h-2 rounded-full bg-primary animate-pulse' />Full Stack • Java Developer 
             </span>
+            
+            <div className='flex items-center gap-4 animate-fade-in animation-delay-400'>
+            
+            {[{icon: Linkedin, href:"https://www.linkedin.com/in/rishabh-prasad-singh-88827820b"},
+              {icon: Github, href:"https://github.com/rishabhrj06"}
+            ].map((social, id) => 
+                  <a key={id} href={social.href} className='p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300'>
+                    {<social.icon className='h-5 w-5' />}
+                  </a>)}
           </div>
+
+          </div>
+           
 
           <div className='space-y-4'>
             <h1 className='text-3xl md:text-4xl lg:text-5xl font-bold leading-tight animate-fade-in animation-delay-100'>
@@ -50,20 +63,12 @@ const Hero = () => {
               Contact Me <ArrowRight className='w-5 h-5' />
             </Button>
 
-            <Button size="default" className='bg-transparent focus-visible:ring-white hover:border hover:border-white hover:bg-transparent'>
+            <Button size="default" className='bg-transparent hover:shadow-sm hover:shadow-primary/40 border border-muted-foreground/70 hover:bg-transparent'>
               Download CV <Download />
             </Button>
           </div>
 
-          <div className='flex items-center gap-4 animate-fade-in animation-delay-400'>
-            <span className='text-sm text-muted-foreground'>Follow Me: </span>
-            {[{icon: Linkedin, href:"https://www.linkedin.com/in/rishabh-prasad-singh-88827820b"},
-              {icon: Github, href:"https://github.com/rishabhrj06"}
-            ].map((social, id) => 
-                  <a key={id} href={social.href} className='p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300'>
-                    {<social.icon className='h-5 w-5' />}
-                  </a>)}
-          </div>
+         
 
         </div>
 
@@ -72,13 +77,32 @@ const Hero = () => {
             <div className='absolute rounded-3xl animate-pulse inset-0 bg-gradient-to-br from-primary/30 via-transparent to-primary/10 blur-2xl'/>
             <div className='relative glass rounded-3xl p-2 glow-border'>
               <img src="/Rishabh.png" alt="Rishabh_Prasad_Singh.img" className='w-full aspect-[4/5] object-cover rounded-2xl border border-border/50'/>
+
+              <div className='absolute -bottom-4 -right-4 glass rounded-xl px-4 py-3 animate-float'>
+                <div className='flex gap-3 items-center'>
+                  <div className='w-3 h-3 rounded-full bg-green-500 animate-pulse' />
+                    <span className='text-sm font-medium'>
+                      Available For Work
+                    </span>
+                  
+                </div>
+              </div>
+
+              <div className='absolute flex flex-col justify-center -top-4 -left-4 glass rounded-xl px-4 py-3 animate-float delay-500'>
+               <span className='font-bold text-primary text-2xl'>1+</span>
+               <span className='text-sm text-muted-foreground'>Projects Built</span>
+              </div>
+
             </div>
           </div>
-        </div>
 
+        </div>
       </div>
+
+      <Skills />
+      
      </div>
-     
+      
 
     </section>
   )

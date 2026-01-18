@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Button = ({size = "default", className, children}) => {
-  const baseClass = "relative rounded-full overflow-hidden font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-primary bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg shadow-primary/25";
+  const baseClass = "relative rounded-full overflow-hidden font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-primary bg-primary text-primary-foreground hover:bg-primary/90";
   
   const sizeClass = {
     sm: "px-4 py-2 text-sm",
