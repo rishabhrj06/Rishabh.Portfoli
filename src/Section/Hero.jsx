@@ -73,7 +73,7 @@ const Hero = () => {
         </div>
 
         <div className='relative animate-fade-in animation-delay-300'>
-          <div className='relative max-w-md mx-auto'>
+          <div className='relative max-w-sm mx-auto'>
             <div className='absolute rounded-3xl animate-pulse inset-0 bg-gradient-to-br from-primary/30 via-transparent to-primary/10 blur-2xl'/>
             <div className='relative glass rounded-3xl p-2 glow-border'>
               <img src="/Rishabh.png" alt="Rishabh_Prasad_Singh.img" className='w-full aspect-[4/5] object-cover rounded-2xl border border-border/50'/>

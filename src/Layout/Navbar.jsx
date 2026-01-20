@@ -36,18 +36,18 @@ const Navbar = () => {
         </NavLink>
 
         <div className='glass hidden md:flex items-center gap-2 rounded-full py-1 px-2 '>
-          <NavLink to='/' className={mobCmd}>
+          <a href='#about' className={mobCmd}>
             About
-          </NavLink>
-          <NavLink to='' className={mobCmd}>
+          </a>
+          <a href='#projects' className={mobCmd}>
             Projects
-          </NavLink>
-          <NavLink to='' className={mobCmd}>
+          </a>
+          <a href='#experience' className={mobCmd}>
             Experience
-          </NavLink>
-          <NavLink to='' className={mobCmd}>
-            Testimonials
-          </NavLink>
+          </a>
+          <a href='#cts' className={mobCmd}>
+            Contacts
+          </a>
         </div>
 
         <Button size="sm" className='hidden md:block '>Contact Me</Button>
@@ -67,10 +67,10 @@ const Navbar = () => {
           <a onClick={() => setIsMobileMenuOpen(false)} href='#experience' className={cmd}>
             Experience
           </a>
-          <NavLink onClick={() => setIsMobileMenuOpen(false)} to='' className={cmd}>
-            Testimonials
-          </NavLink>
-          <Button onClick={() => setIsMobileMenuOpen(false)} size="sm" className='md:hidden cursor-pointer'>Contact Me</Button>
+          <a onClick={() => setIsMobileMenuOpen(false)} href='#cts' className={cmd}>
+            Contacts
+          </a>
+          <Button onClick={() => (setIsMobileMenuOpen(false))} size="sm" className='md:hidden cursor-pointer'>Contact Me</Button>
         </div> )} 
     </header>
     
