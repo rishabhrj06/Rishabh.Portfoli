@@ -14,13 +14,14 @@ const contacts = [
     icon: Phone,
     label: "Phone",
     value: "+91 73405-53614",
-    href: "tel:+917340553614",
+    href: "tel:+917340553614"
+    
   },
   {
     icon: MapPin,
     label: "Location",
     value: "Rajasthan, India",
-    href: "#"
+    href: "https://www.google.com/maps/place/Rajasthan,+India/"
   }
 ]
 

@@ -5,22 +5,23 @@ const highlights = [
   {
     icone: Code2,
     title: "Clean Code",
-    description: "we will fill it out later"
+    description: "I write clean, readable, and maintainable code by following best practices, proper naming conventions, and modular design. I focus on writing code that is easy to understand, test, and scale over time."
   },
   {
     icone: Rocket,
     title: "Performance",
-    description: "we will fill it out later"
+    description: "I optimize applications for speed and efficiency, ensuring smooth user experiences and minimal resource consumption."
   },
+  
   {
     icone: User,
     title: "Collaboration",
-    description: "we will fill it out later"
+    description: "I collaborate effectively with team members, ensuring seamless communication and shared understanding of project goals and technical requirements."
   },
   {
     icone: Lightbulb,
     title: "Innovation",
-    description: "we will fill it out later"
+    description: "I bring creative solutions to complex problems, always exploring new approaches and technologies to improve user experiences and system performance."
   }
 ]
 const About = () => {

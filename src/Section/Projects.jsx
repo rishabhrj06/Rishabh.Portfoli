@@ -62,10 +62,10 @@ const Projects = () => {
 
                     {/* Overlay links */}
                     <div className='absolute inset-0 flex items-center justify-center gap-4 opacity-0 hover:opacity-100 transition-opacity duration-300'>
-                      <a href={project.link} className='p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all'>
+                      <a  target="_blank" rel="noopener noreferrer" href={project.link} className='p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all'>
                         <ArrowUpRight className='w-5 h-5'/>
                       </a>
-                      <a href={project.github} className='p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all'>
+                      <a  target="_blank" rel="noopener noreferrer" href={project.github} className='p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all'>
                         <Github className='w-5 h-5'/>
                       </a>
                     </div>
@@ -86,12 +86,6 @@ const Projects = () => {
             ))}
           </div>
 
-        </div>
-        <div className='text-center mt-12 animate-fade-in animation-delay-500'>
-        <Button size="default" className='bg-transparent text-sm md:text-md hover:shadow-sm hover:shadow-primary/40 border border-muted-foreground/70 hover:bg-transparent'>
-          View All Projects
-          <ArrowUpRight className='w-5 h-5'/>
-        </Button>
         </div>
         
       </div> 

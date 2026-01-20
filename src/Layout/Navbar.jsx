@@ -31,11 +31,14 @@ const Navbar = () => {
     <header className={`fixed top-0 left-0 right-0  transition-all duration-400 ${isScrolled ? "glass-strong py-3":"bg-transparent py-5"} z-50`}>
       <nav className=' container mx-auto px-6 flex items-center justify-between'>
 
-        <NavLink to='/' className="text-xl pl-5 font-bold tracking-tight hover:text-primary">
+        <a href = '#' className="text-xl pl-5 font-bold tracking-tight hover:text-primary">
           Portfolio<span className='text-primary'>.</span>Rishabh
-        </NavLink>
+        </a>
 
         <div className='glass hidden md:flex items-center gap-2 rounded-full py-1 px-2 '>
+          <a href='#' className={mobCmd}>
+            Home
+          </a>
           <a href='#about' className={mobCmd}>
             About
           </a>
@@ -50,7 +53,7 @@ const Navbar = () => {
           </a>
         </div>
 
-        <Button size="sm" className='hidden md:block '>Contact Me</Button>
+        <a href="#cts"><Button size="sm" className='hidden md:block '>Contact Me</Button></a>
          
          {/* Mobile Menu */}
          <button className='md:hidden p-2 text-foreground cursor-pointer' onClick={() => setIsMobileMenuOpen((prev) => !prev)}>
@@ -70,7 +73,7 @@ const Navbar = () => {
           <a onClick={() => setIsMobileMenuOpen(false)} href='#cts' className={cmd}>
             Contacts
           </a>
-          <Button onClick={() => (setIsMobileMenuOpen(false))} size="sm" className='md:hidden cursor-pointer'>Contact Me</Button>
+          <a href="#cts"><Button onClick={() => (setIsMobileMenuOpen(false))} size="sm" className='md:hidden w-full cursor-pointer'>Contact Me</Button></a>
         </div> )} 
     </header>
     

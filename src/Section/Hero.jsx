@@ -40,7 +40,7 @@ const Hero = () => {
             {[{icon: Linkedin, href:"https://www.linkedin.com/in/rishabh-prasad-singh-88827820b"},
               {icon: Github, href:"https://github.com/rishabhrj06"}
             ].map((social, id) => 
-                  <a key={id} href={social.href} className='p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300'>
+                  <a  target="_blank" rel="noopener noreferrer" key={id} href={social.href} className='p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300'>
                     {<social.icon className='h-5 w-5' />}
                   </a>)}
           </div>
@@ -59,13 +59,15 @@ const Hero = () => {
           </div>
 
           <div className='flex flex-wrap gap-4 animate-fade-in animation-delay-300'>
-            <Button size="default">
+            <a href="#cts"><Button size="default">
               Contact Me <ArrowRight className='w-5 h-5' />
-            </Button>
+            </Button></a>
 
-            <Button size="default" className='bg-transparent hover:shadow-sm hover:shadow-primary/40 border border-muted-foreground/70 hover:bg-transparent'>
-              Download CV <Download />
-            </Button>
+            <a href="/rrrr.pdf" target="_blank" rel="noopener noreferrer">
+              <Button size="default" className='bg-transparent hover:shadow-sm hover:shadow-primary/40 border border-muted-foreground/70 hover:bg-transparent'>
+                Download CV <Download />
+              </Button>
+            </a>
           </div>
 
          
