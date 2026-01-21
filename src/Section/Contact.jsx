@@ -92,8 +92,9 @@ const Contact = () => {
           <p className='text-sm text-muted-foreground animate-fade-in animation-delay-200'>Have an idea, a project, or an opportunity in mind? I’m always open to discussing development work, internships, collaborations, or learning-focused projects. Feel free to reach out — I usually respond within 24 hours..</p>
         </div>
         </div>
+      
 
-        <div className='grid lg:grid-cols-2 gap-12 max-w-5xl mx-auto'> 
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 max-w-5xl mx-auto'> 
           <div className='glass p-8 rounded-3xl border border-primary/30 animate-fade-in animation-delay-300'>
             <form onSubmit={handleSubmit} className='space-y-6'>
               <div>
@@ -168,7 +169,7 @@ const Contact = () => {
 
           
           <div className="space-y-6 animate-fade-in animation-delay-400">
-            <div className="glass rounded-3xl p-8">
+            <div className="glass  p-6 rounded-2xl md:rounded-3xl md:p-8">
               <h3 className="text-xl font-semibold mb-6">
                 Contact Information
               </h3>
@@ -179,14 +180,14 @@ const Contact = () => {
                     href={contact.href}
                     className="flex items-center gap-4 p-4 rounded-xl hover:bg-surface transition-colors group"
                   >
-                    <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                    <div className="w-12 h-12 shrink-0 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
                       <contact.icon className="w-5 h-5 text-primary" />
                     </div>
                     <div>
                       <div className="text-sm text-muted-foreground">
                         {contact.label}
                       </div>
-                      <div className="font-medium">{contact.value}</div>
+                      <div className="font-medium break-all sm:break-normal">{contact.value}</div>
                     </div>
                   </a>
                 ))}

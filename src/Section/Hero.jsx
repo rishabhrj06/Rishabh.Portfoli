@@ -35,7 +35,7 @@ const Hero = () => {
               <span className='w-2 h-2 rounded-full bg-primary animate-pulse' />Full Stack • Java Developer 
             </span>
             
-            <div className='flex items-center gap-4 animate-fade-in animation-delay-400'>
+            <div className='flex items-center gap-4 animate-fade-in'>
             
             {[{icon: Linkedin, href:"https://www.linkedin.com/in/rishabh-prasad-singh-88827820b"},
               {icon: Github, href:"https://github.com/rishabhrj06"}
